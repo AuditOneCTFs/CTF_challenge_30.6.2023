@@ -21,10 +21,8 @@ When a user calls `executeExchange`, he/she transfer the ether to the contract, 
 Add the logic to transfer the tokens to the msg.sender
 
 **Additional context**
-Add any other context about the problem here.
 
 **Comments by AuditOne**
-AuditOne team can comment here
 
 ---
 **Issue 2**
@@ -55,10 +53,8 @@ Update the code on Line#22 to perform multiplication first and then division
 ```
 
 **Additional context**
-Add any other context about the problem here.
 
 **Comments by AuditOne**
-AuditOne team can comment here
 
 ---
 **Issue 3**
@@ -90,10 +86,8 @@ Additionally, using higher than 2300 gas might be mandatory for some multisig wa
 using `call()` instead of `transfer()`
 
 **Additional context**
-Add any other context about the problem here.
 
 **Comments by AuditOne**
-AuditOne team can comment here
 
 ---
 
@@ -125,10 +119,8 @@ https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/main/Exchange.s
 4. add a transferOwnership function
 
 **Additional context**
-Add any other context about the problem here.
 
 **Comments by AuditOne**
-AuditOne team can comment here
 
 ---
 
