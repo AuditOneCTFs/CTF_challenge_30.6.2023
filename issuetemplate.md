@@ -1,19 +1,21 @@
 **Issue 1**
 
 **Issue category**
+
 Medium
 
 **Issue title**
-executeExchange never transfers the _coins
+
+`executeExchange` never transfers the `_coins` to `msg.sender`
 
 **Where**
 https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/3726d1c2fb5f98335c6b7386668a6b16bf2729df/Exchange.sol#L25
 
 **Impact**
-msg.sender loses the transfered ether
+`msg.sender` loses the transfered ether
 
 **Description**
-When a user calls executeExchange, he/she transfer the ether to the contract, the contract later on transfers the fee to the owner, but no tokens are transfered.
+When a user calls `executeExchange`, he/she transfer the ether to the contract, the contract later on transfers the fee to the owner, but no tokens are transfered.
 
 **Recommendations to fix**
 Add the logic to transfer the tokens to the msg.sender
@@ -31,7 +33,7 @@ AuditOne team can comment here
 Low
 
 **Issue title**
-Loss of Precision in the calculateFee function 
+Loss of Precision in the `calculateFee` function 
 
 **Where**
 https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/3726d1c2fb5f98335c6b7386668a6b16bf2729df/Exchange.sol#L22
@@ -40,9 +42,8 @@ https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/3726d1c2fb5f983
 The owner may lose fee over multiple trades
 
 **Description**
-With the assumption that, _coins <= totalCoins, the function calculateFee performs division first and then multiplication.
+With the assumption that, `_coins <= totalCoins`, the function `calculateFee` performs division first and then multiplication.
 This can result in rounding down of the value as solidity behaves in this manner which results in less fee collected for a trade.
-
 
 **Recommendations to fix**
 Update the code on Line#22 to perform multiplication first and then division
@@ -64,7 +65,7 @@ AuditOne team can comment here
 Low
 
 **Issue title**
-
+use `call()` instead of `transfer()`
 
 **Where**
 https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/3726d1c2fb5f98335c6b7386668a6b16bf2729df/Exchange.sol#L30
@@ -81,9 +82,8 @@ The use of the deprecated transfer() function for an address will inevitably mak
 
 Additionally, using higher than 2300 gas might be mandatory for some multisig wallets.
 
-
 **Recommendations to fix**
-using call() instead of transfer()
+using `call()` instead of `transfer()`
 
 **Additional context**
 Add any other context about the problem here.
