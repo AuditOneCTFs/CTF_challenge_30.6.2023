@@ -30,9 +30,11 @@ AuditOne team can comment here
 **Issue 2**
 
 **Issue category**
+
 Low
 
 **Issue title**
+
 Loss of Precision in the `calculateFee` function 
 
 **Where**
@@ -62,9 +64,11 @@ AuditOne team can comment here
 **Issue 3**
 
 **Issue category**
+
 Low
 
 **Issue title**
+
 use `call()` instead of `transfer()`
 
 **Where**
@@ -96,9 +100,11 @@ AuditOne team can comment here
 **Issue 4**
 
 **Issue category**
+
 Informational/QA
 
 **Issue title**
+
 Use the latest solidity version instead of floating pragma
 
 **Where**
