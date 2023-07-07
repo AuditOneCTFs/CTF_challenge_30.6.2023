@@ -2,7 +2,7 @@
 **Issue category High**
 
 **Issue 1**
-Lost of precision
+Loss of precision
 
 Where https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/3726d1c2fb5f98335c6b7386668a6b16bf2729df/Exchange.sol#L22
 
