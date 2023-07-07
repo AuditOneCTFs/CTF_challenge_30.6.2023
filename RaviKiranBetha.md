@@ -118,12 +118,18 @@ Comments by AuditOne
 **Issue 6**
 
 Issues:
+
 Category QA
+
 a) Owner can set exchange rate and it is centralized.
+
 b) loss of private keys of the owner account bears the risk for loss of all funds.
+
 c) floating pragma is used. Floating pragma should be used only by library contracts and project should always lock the pragma before testing
    testing should be done with locked pragma to avoid any expected behaviour on the deploy on mainnet.
+
 d) Data type should be uint256 for exchange fee and total coin. It is better to explicitly declare the data types.   
+
 e) Natspec is missing for all the functions of this contract   
 
 
