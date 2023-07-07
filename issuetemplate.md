@@ -115,12 +115,14 @@ https://github.com/AuditoneCodebase/CTF_challenge_30.6.2023/blob/main/Exchange.s
 1. Floating Pragma issue
 2. Events are not emitted
 3. Owner can set a very high exchange fee
+4. Owner cannot be updated
 
 **Recommendations to fix**
 
 1. Update to latest solidity version
 2. Emit events on important state changes and index them
 3. Define a state varaible like MAX_FEE = 20; and add a check in the setExchangeFee this ensures that the owner cannot set  exchange fee more than MAX_FEE.
+4. add a transferOwnership function
 
 **Additional context**
 Add any other context about the problem here.
